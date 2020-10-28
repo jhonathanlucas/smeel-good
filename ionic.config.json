@@ -1,0 +1,7 @@
+{
+  "name": "smeel-good",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
