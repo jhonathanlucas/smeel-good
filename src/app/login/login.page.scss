@@ -1,0 +1,76 @@
+ .bg-login{
+    width: 300px;
+    height: 100%;
+    background-image: url('/assets/imgs/lavanderia.jpeg');
+    background-size: cover;
+    background-position: center;
+} 
+.overlay{
+    width: 300px;
+    height: 100%;
+    background:linear-gradient(to top, rgba(0, 0, 0,),rgba(0, 0, 0, 0.911),rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.788));
+}
+.logo-white-login{
+    width: 30%;
+}
+
+// Align
+.center{
+    text-align: center;
+}
+
+// Margin
+.no-margin{
+    margin: 0px;
+}
+.ng-top-5{
+    margin-top: 5px;
+}
+.ng-top-10{
+    margin-top: 10px;
+}
+.ng-top-20{
+    margin-top: 20px;
+}
+.ng-top-30{
+    margin-top: 30px;
+}
+.ng-top-40{
+    margin-top: 40px;
+}
+
+// Padding
+.no-padding{
+    padding: 0px;
+}
+.padding-top-20-percent{
+    padding-top: 20%;
+}
+.padding-top-30-percent{
+    padding-top: 30%;
+}
+.padding-40{
+    padding: 40px;
+}
+
+//global
+*{
+    font-family: 'Montserrat', sans-serif;
+} 
+.bold{
+    font-weight: 700;
+}
+.light{
+    font-weight: 300;
+}
+
+.bg-transparent{
+    // background: transparent;
+    opacity: 0.2;
+    // background-color: yellow;
+}
+//global
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
