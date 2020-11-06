@@ -37,7 +37,7 @@
             <ion-input type="password"></ion-input>
           </ion-item>
 
-          <div class="ctalogin bold center mg-top-30">
+          <div class="ctalogin bold center mg-top-30" routerLink="/inicial">
             entrar
           </div>
 
@@ -85,65 +85,45 @@
 
           <ion-item class="bg-transparent no-padding mg-top-30">
             <ion-label position="floating">Qual é o seu nome</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input [(ngModel)]="username" type="text"></ion-input>
           </ion-item>
 
           <ion-item class="bg-transparent no-padding mg-top-20">
             <ion-label position="floating">Qual é o seu e-mail</ion-label>
-            <ion-input type="email"></ion-input>
+            <ion-input [(ngModel)]="email" type="email"></ion-input>
           </ion-item>
 
           <ion-item class="bg-transparent no-padding mg-top-20" bg-transparent no-padding mg-top-20 lines="full">
             <ion-label position="floating">Data de nascimento</ion-label>
-            <ion-datetime (ionChange)="($event)" [value]="defaultDate"></ion-datetime>
+            <ion-datetime [(ngModel)]="myDate" (ionChange)="($event)" [value]="defaultDate"></ion-datetime>
           </ion-item>
 
           <ion-item class="bg-transparent no-padding mg-top-20" bg-transparent no-padding mg-top-20 lines="full">
             <ion-label position="floating">Cep</ion-label>
-            <ion-input maxlength="10" type="number" required></ion-input>
+            <ion-input [(ngModel)]="cep" maxlength="10" type="number" required></ion-input>
           </ion-item>
-
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.cep.errors?.required">
-            Precisa colocar um CEP valido.
-          </span>
-
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.cep.errors?.pattern">
-            Somente numeros.
-          </span>
 
           <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
             <ion-label position="floating">Numero</ion-label>
-            <ion-input maxlength="10" type="number" required></ion-input>
+            <ion-input [(ngModel)]="number" maxlength="10" type="number" required></ion-input>
           </ion-item>
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.num.errors?.required">
-            Requer um numero.
-          </span>
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.num.errors?.pattern">
-            Somente numeros.
-          </span>
-      
+
           <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
             <ion-label position="floating">complemento</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input [(ngModel)]="complement" type="text"></ion-input>
           </ion-item>
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.complemento.errors?.required">
-            Requer um complemento.
-          </span>
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.complemento.errors?.minlength">
-            Complemento precisa ter no minimo 2 caracteres.
-          </span>
 
           <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
             <ion-label position="floating">Celular</ion-label>
-            <ion-input maxlength="10" type="text" required></ion-input>
+            <ion-input maxlength="10" [(ngModel)]="phone" type="text" required></ion-input>
           </ion-item>
 
           <ion-item class="bg-transparent no-padding mg-top-20" class="bg-transparent no-padding mg-top-20">
             <ion-label position="floating">Escolha uma super senha:p</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input [(ngModel)]="senha" type="password"></ion-input>
           </ion-item>
 
-          <div class="ctaregister bold center mg-top-30">
+          <div class="ctaregister bold center mg-top-30" routerLink="/inicial" (click)="logForm()">
             Cadastrar
           </div>
 
