@@ -7,14 +7,16 @@ import { Storage } from '@ionic/storage';
 })
 export class LoginPage implements OnInit {
   
-  username: '';
-  email: '';
-  myDate: '';
-  cep: '';
-  number: '';
-  complement: '';
-  phone: '';
-  senha: '';
+  public formulariozinho = {
+  username: '',
+  email: '',
+  myDate: '',
+  cep: '',
+  number: '',
+  complement: '',
+  phone: '',
+  senha: '',
+  }
 
   key:string;
 
@@ -41,33 +43,20 @@ export class LoginPage implements OnInit {
   }
 
   saveData(){
-    this.storage.set('nome', this.username);
-    this.storage.set('email', this.email);
-    this.storage.set('dataNasc', this.myDate);
-    this.storage.set('cep', this.cep);
-    this.storage.set('numero', this.number);
-    this.storage.set('compl', this.complement);
-    this.storage.set('tel', this.phone);
-    this.storage.set('password', this.senha);
+    this.storage.set('key', this.formulariozinho);
+   
   }
-  
+
   loadData()
 {
   this.storage.get(this.key).then((val) => {
-    console.log('nome', val);
-    console.log('email', this.email);
-    console.log('dataNasc', this.myDate);
-    console.log('cep', this.cep);
-    console.log('numero', this.number);
-    console.log('compl', this.complement);
-    console.log('tel', this.phone);
-    console.log('password', this.senha);
+    console.log('key', val);
+   
   });
 }
   public logForm(){
-    console.log("informaçoes do cadastro: \n nome: " + this.username + "\n email: " + this.email
-    + "\n data: " + this.myDate + "\n cep: " + this.cep + "\n numero: " + this.number + "\n complemento: " + this.complement
-    + "\n celular: " + this.phone + "\n senha: " + this.senha);
+    console.log("informaçoes do cadastro: \n nome: " + this.formulariozinho)
+  
   }
-
+  
 }
