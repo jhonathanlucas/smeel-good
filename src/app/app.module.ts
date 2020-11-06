@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { LoginPageModule } from './login/login.module';
+import { IonicStorageModule } from '@ionic/storage';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -17,7 +18,8 @@ import { LoginPageModule } from './login/login.module';
     LoginPageModule,
     BrowserModule,
     IonicModule.forRoot(),
-     AppRoutingModule
+     AppRoutingModule,
+     IonicStorageModule.forRoot()
   ],
   providers: [
     StatusBar,
