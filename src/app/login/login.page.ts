@@ -19,24 +19,20 @@ export class LoginPage implements OnInit {
   }
 
   key:string;
-
-  login = true;
-  register = false;
   defaultDate = "1987-06-30";
-  isSubmitted = false;
+  isSubmitted = false;  
 
   constructor(private storage: Storage) { }
 
-
   // Exibir o fomr de resgistro
-  exibirResgistrar(){
-    this.login = false;
-    this.register = true;
-  }
-  exibirLogin(){
-    this.login = true;
-    this.register = false;
-  }
+  // exibirResgistrar(){
+  //   this.login = false;
+  //   this.register = true;
+  // }
+  // exibirLogin(){
+  //   this.login = true;
+  //   this.register = false;
+  // }
 
   ngOnInit() {
    

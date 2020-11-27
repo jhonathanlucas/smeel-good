@@ -1,7 +1,7 @@
 <ion-content>
 
   <!-- LOGIN -->
-  <div class="bg-login" *ngIf="login">
+  <div class="bg-login">
 
     <!-- overlay -->
     <div class="overlay">
@@ -37,12 +37,12 @@
             <ion-input type="password"></ion-input>
           </ion-item>
 
-          <div class="ctalogin bold center mg-top-30" routerLink="/inicial">
+          <div class="ctalogin bold center mg-top-30" routerLink="/home">
             entrar
           </div>
 
           <!-- Cadastre-se -->
-          <div class="txtcad bold mg-top-20 center" (click)="exibirResgistrar()">
+          <div class="txtcad bold mg-top-20 center" routerLink="/cadastro">
             Criar uma nova conta
           </div>
 
@@ -53,91 +53,5 @@
     </div>
 
   </div>
-
-
-  <!-- Register -->
-  <div class="bg-register" *ngIf="register">
-
-    <!-- overlay -->
-    <div class="overlay">
-
-      <!-- register-Container -->
-      <div>
-
-        <!-- logo -->
-        <div class="center padding-top-10-percent">
-          <img src="/assets/imgs/Smee.png" class="logo-white-login">
-        </div>
-
-        <!-- TEXTOS -->
-        <div class="mg-top-30">
-          <!-- TITULOS -->
-          <h5 class="center bold no-margin mg-top-40">
-            eba! Vamos lá.
-          </h5>
-          <!-- SUBTITULO -->
-          <p class="center light no-margin mg-top-10">
-            Crie suas credenciais de acesso
-          </p>
-        </div>
-        <!-- Forms e CTA -->
-        <div class="padding-40">
-
-          <ion-item class="bg-transparent no-padding mg-top-30">
-            <ion-label position="floating">Qual é o seu nome</ion-label>
-            <ion-input [(ngModel)]="formulariozinho.username" type="text"></ion-input>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20">
-            <ion-label position="floating">Qual é o seu e-mail</ion-label>
-            <ion-input [(ngModel)]="formulariozinho.email" type="email"></ion-input>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20" bg-transparent no-padding mg-top-20 lines="full">
-            <ion-label position="floating">Data de nascimento</ion-label>
-            <ion-datetime [(ngModel)]="formulariozinho.myDate" (ionChange)="($event)" [value]="defaultDate"></ion-datetime>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20" bg-transparent no-padding mg-top-20 lines="full">
-            <ion-label position="floating">Cep</ion-label>
-            <ion-input [(ngModel)]="formulariozinho.cep" maxlength="10" type="number" required></ion-input>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
-            <ion-label position="floating">Numero</ion-label>
-            <ion-input [(ngModel)]="formulariozinho.number" maxlength="10" type="number" required></ion-input>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
-            <ion-label position="floating">complemento</ion-label>
-            <ion-input [(ngModel)]="formulariozinho.complement" type="text"></ion-input>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
-            <ion-label position="floating">Celular</ion-label>
-            <ion-input maxlength="10" [(ngModel)]="formulariozinho.phone" type="text" required></ion-input>
-          </ion-item>
-
-          <ion-item class="bg-transparent no-padding mg-top-20" class="bg-transparent no-padding mg-top-20">
-            <ion-label position="floating">Escolha uma super senha:p</ion-label>
-            <ion-input [(ngModel)]="formulariozinho.senha" type="password"></ion-input>
-          </ion-item>
-
-          <div class="ctaregister bold center mg-top-30" routerLink="/inicial" (click)="saveData()" >
-            Cadastrar
-          </div>
-
-          <!-- Ja tenho uma conta -->
-          <div class="bold mg-top-20 center" (click)="exibirLogin()">
-            Ja tenho uma conta
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
+  
 </ion-content>
