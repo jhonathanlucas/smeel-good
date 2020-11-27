@@ -54,7 +54,11 @@ const routes: Routes = [
   {
     path: 'entrega',
     loadChildren: () => import('./entrega/entrega.module').then( m => m.EntregaPageModule)
+  },  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+
  
 
 ];

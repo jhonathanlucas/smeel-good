@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start" class="bg-transparent">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Smeel Good </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-menu side="start" menuId="first" contentId="main">
+
+  <ion-header>
+
+    <ion-toolbar>
+      <ion-title><b>Menu</b></ion-title>
+    </ion-toolbar>
+
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+        <ion-item  routerLink="/home">Perfil</ion-item>
+        <ion-item>Planos</ion-item>
+        <ion-item>Sobre nós</ion-item>
+        <ion-item>Fale conosco</ion-item>
+
+        <ion-item lines="full">
+          <ion-icon slot="start" name="moon"></ion-icon>
+          <ion-label>
+            Toggle Dark Theme
+          </ion-label>
+          <ion-toggle default (ionChange)="sotario($event)" slot="end"></ion-toggle>
+        </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<ion-content>
+  <h2 class="center light no-margin">
+    Planos completos que atendem
+    você e sua família
+  </h2>
+
+    <p class="center light no-margin mg-top-10">
+      Nossos planos incluem todo tipo de roupa. Cancele quando quiser. Sem fidelidade.
+    </p>
+</ion-content>
