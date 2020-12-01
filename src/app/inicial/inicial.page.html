@@ -1,17 +1,55 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title class="titulo">inicial</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
 
-  <h1 class="ion-text-center">Suas roupas lavadas e passadas sem voce precisar sair de casa.</h1>
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/machine.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"> <h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/basket-removebg-preview.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"> <h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
 
-  <h2 class="ion-text-center">Tudo isso por apenas 100,00 reais</h2>
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/calendar.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"><h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/planos.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"><h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/limpo.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"><h4 class="a">Entendi, quero começar</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    
 
-  <ion-card class="cliButton">
-    <ion-button routerLink="/agendamento" size="large" expand="full" fill="clear">Quero agendar a retirada</ion-button>
-  </ion-card>
+    
 
+  </ion-slides>
 </ion-content>

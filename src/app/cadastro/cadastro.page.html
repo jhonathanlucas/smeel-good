@@ -67,12 +67,12 @@
           <ion-input [(ngModel)]="formulariozinho.senha" type="password"></ion-input>
         </ion-item>
 
-        <div class="ctaregister bold center mg-top-30" routerLink="/inicial">
+        <div class="ctaregister bold center mg-top-30" routerLink="/home" (click)="saveData()">
           Cadastrar
         </div>
 
         <!-- Ja tenho uma conta -->
-        <div class="bold mg-top-20 center" routerLink="/login">
+        <div class="bold mg-top-20 center" routerLink="/login" >
           Ja tenho uma conta
         </div>
 

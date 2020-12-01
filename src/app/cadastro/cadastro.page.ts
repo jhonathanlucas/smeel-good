@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-cadastro',
@@ -24,7 +25,7 @@ export class CadastroPage implements OnInit {
   isSubmitted = false;
   // register: boolean;
   // login: boolean;
-  storage: any;
+  
 
   constructor(public formBuilder: FormBuilder, private storage: Storage) { }
 
@@ -55,7 +56,7 @@ export class CadastroPage implements OnInit {
 
   loadData()
 {
-  this.storage.get(this.key).then((val) => {
+  this.storage.get('key').then((val) => {
     console.log('key', val);
    
   });

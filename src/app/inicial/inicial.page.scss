@@ -1,10 +1,27 @@
-.cliButton{
-    margin-left: 0.5cm;
-    justify-content: center;
-    position: absolute;
-	bottom: 0;
+.a{
+    color: rgb(252, 252, 252);
 }
 
-.titulo{
-    text-align: center;
+.fund{
+    width: 412px;
+    height: 732px;
+    background-image: url(/assets/imgs/fundo2.jpg);
+}
+
+.maquininhaa{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left:20%;
+    top: 18%;
+}
+
+.cliButton{
+    width: 100%;
+    margin-left: 0.1;
+    position: absolute;
+    
+    top: 90%;
+    background-color: #0084d1fb;
+    
 }
