@@ -26,7 +26,7 @@ export class CadastroPage implements OnInit {
   // login: boolean;
   storage: any;
 
-  constructor(public formBuilder: FormBuilder) { }
+  constructor(public formBuilder: FormBuilder, private storage: Storage) { }
 
   // exibirResgistrar(){
   //   this.login = false;

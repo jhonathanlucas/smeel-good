@@ -1,44 +1,55 @@
-<ion-header>
-  <ion-toolbar >
-    <ion-title class="titulo" >
-      Olá, <br>
-        Seja bem-vindo
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
 
-<ion-content class="ion-padding">
-  <ion-row>
-    <ion-col>
-      <ion-card>
-        <img
-          src="https://www.flaticon.com/svg/static/icons/svg/38/38056.svg"
-          class="maquininha">
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/machine.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"> <h4 class="a">Ja sei como funciona</h4></ion-button>
       </ion-card>
-    </ion-col>
-    <ion-col>
-      <ion-card>
-        <img
-          src="https://www.flaticon.com/svg/static/icons/svg/3241/3241264.svg"
-          class="maquininha">
-      </ion-card>
-    </ion-col>
-  </ion-row>
-
-  <h2 class="ion-text-center">Como lavar minhas roupas sem perder tempo?</h2>
-
-  <br>
-
-  <ion-item>
-      <ion-button routerLink="/step1" slot="end" fill="clear" shape="round">
-        <ion-label>Proximo</ion-label>
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </ion-button>
-  </ion-item>
-
-    <ion-card class="cliButton">
-      <ion-button routerLink="/cadastro" size="large" expand="full" fill="clear">Ja sei como funciona</ion-button>
-    </ion-card>
+    </ion-slide>
     
-</ion-content>
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/basket-removebg-preview.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"> <h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
 
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/calendar.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"><h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/planos.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"><h4 class="a">Ja sei como funciona</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide class="fund">
+      <img
+      src="/assets/imgs/limpo.png"
+      class="maquininhaa">
+      <ion-card class="cliButton">
+        <ion-button routerLink="/login" size="large" expand="full" fill="clear"><h4 class="a">Entendi, quero começar</h4></ion-button>
+      </ion-card>
+    </ion-slide>
+    
+    
+
+    
+
+  </ion-slides>
+</ion-content>
