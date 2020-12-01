@@ -1,18 +1,79 @@
+//backgroud-menu
 ion-toolbar{
-  --background: #0099ffec; 
-  --color: white;
+  --background: #0099ff; 
 }
 
+//menu-logo
+img{
+  width: 45px;
+}
+
+//menu-hamburguer
 .bg-transparent{
   --background: transparent;
+  color: black;
 }
 
-ion-router-outlet{
-  background:white;
+//textos de apresentação
+.txt-plano{
+  padding: 10px;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: block;
 }
 
+//container dos planos
+.ct-plano{
+  padding: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-// p{
-//   --color: rgb(13, 14, 13);
+//backgroud dos planos
+.bg-plano{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-// }
+//opções de planos
+.plano{
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a{
+  width: 30%;
+  font-size: 15px;
+  margin-left: 162px;
+  margin-top: -45px;
+  color: white;
+  border:#0099ffec 1px solid;
+  border-radius: 40px;
+  background: #0099ffec;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  float: right !important;
+  text-decoration: none;
+}
+
+b{
+  color: #0099ff;
+}
+
+h1{
+  font-weight: bold;
+}

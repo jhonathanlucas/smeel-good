@@ -1,39 +1,46 @@
 <ion-header>
 
   <ion-toolbar>
-    <ion-buttons slot="start" class="bg-transparent">
-      <ion-menu-button></ion-menu-button>
+
+    <ion-buttons slot="start" >
+      <ion-menu-button class="bg-transparent"></ion-menu-button>
     </ion-buttons>
-    <ion-title> Smeel Good </ion-title>
+
+    <ion-title slot="end">
+       <img src="/assets/imgs/Smee.png" class="logo-white-login"> 
+    </ion-title>
+
   </ion-toolbar>
 
 </ion-header>
-
 
 <ion-menu side="start" menuId="first" contentId="main">
 
   <ion-header>
 
     <ion-toolbar>
-      <ion-title><b>Menu</b></ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
 
   </ion-header>
   
   <ion-content>
+
     <ion-list>
-        <ion-item  routerLink="/home">Perfil</ion-item>
-        <ion-item>Planos</ion-item>
-        <ion-item>Sobre nós</ion-item>
-        <ion-item>Fale conosco</ion-item>
+
+        <ion-item routerLink="/planos">Planos</ion-item>
+        <ion-item routerLink="/sobre-nós">Sobre nós</ion-item>
+        <ion-item routerLink="/fale-conosco">Fale conosco</ion-item>
 
         <ion-item lines="full">
-          <ion-icon slot="start" name="moon"></ion-icon>
           <ion-label>
-            Toggle Dark Theme
+             Dark Theme
           </ion-label>
-          <ion-toggle default (ionChange)="sotario($event)" slot="end"></ion-toggle>
+
+          <ion-toggle default (ionChange)="tema($event)" slot="end"></ion-toggle>
+
         </ion-item>
+
     </ion-list>
 
   </ion-content>
@@ -42,12 +49,66 @@
 <ion-router-outlet id="main"></ion-router-outlet>
 
 <ion-content>
-  <h2 class="center light no-margin">
-    Planos completos que atendem
-    você e sua família
-  </h2>
+  <div class="txt-plano">
+      <h1 class="center light no-margin bold">
+        Planos completos que atendem
+        você e sua família
+      </h1>
 
-    <p class="center light no-margin mg-top-10">
-      Nossos planos incluem todo tipo de roupa. Cancele quando quiser. Sem fidelidade.
-    </p>
+      <h5 class="center light no-margin mg-top-10">
+        Nossos planos incluem todo tipo de roupa. Cancele quando quiser. Sem fidelidade.
+      </h5>
+  </div>
+
+  <div class="ct-plano">
+
+    <div class="bg-plano">
+        
+      <div class="plano">
+        <strong>Plano Individual</strong> <br>
+        <b>25 peças por mês</b> <br>
+        R$ 99,00
+        <a routerLink="/pagamento">Assinar</a>
+      </div>
+
+      <br>
+
+      <div class="plano">
+        <strong>Plano Casal</strong> <br>
+        <b>60 peças por mês</b> <br>
+        R$ 169,00
+        <a routerLink="/pagamento">Assinar</a>
+      </div>
+
+      <br>
+
+      <div class="plano">
+        <strong>Plano Familia</strong> <br>
+        <b>120 peças por mês</b> <br>
+        R$ 299,00
+        <a routerLink="/pagamento">Assinar</a>
+      </div>
+
+      <br>
+
+      <div class="plano">
+        <strong>Plano grande Familia</strong> <br>
+        <b> 200 peças por mês</b> <br>
+        R$ 479,00
+        <a routerLink="/pagamento">Assinar</a>
+      </div>
+
+      <br>
+
+      <div class="plano">
+        <strong>Plano Super Familia</strong> <br>
+        <b>300 peças por mês</b> <br>
+        R$ 699,00
+        <a routerLink="/pagamento">Assinar</a> 
+      </div>
+
+    </div>
+
+  </div>
+
 </ion-content>
