@@ -16,54 +16,54 @@
       <!-- TEXTOS -->
       <div class="mg-top-30">
         <!-- TITULOS -->
-        <h5 class="center bold no-margin mg-top-40">
+        <h5 class="center bold no-margin mg-top-40 form-txt">
           eba! Vamos lá.
         </h5>
         <!-- SUBTITULO -->
-        <p class="center light no-margin mg-top-10">
+        <p class="center light no-margin mg-top-10 form-txt">
           Crie suas credenciais de acesso
         </p>
       </div>
       <!-- Forms e CTA -->
-      <div class="padding-40">
+      <div class="padding-40 form-txt">
 
-        <ion-item class="bg-transparent no-padding mg-top-30">
+        <ion-item class="bg-transparent no-padding mg-top-30 form-txt">
           <ion-label position="floating">Qual é o seu nome</ion-label>
           <ion-input [(ngModel)]="formulariozinho.username" type="text"></ion-input>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20">
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt">
           <ion-label position="floating">Qual é o seu e-mail</ion-label>
           <ion-input [(ngModel)]="formulariozinho.email" type="email"></ion-input>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20" bg-transparent no-padding mg-top-20 lines="full">
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
           <ion-label position="floating">Data de nascimento</ion-label>
           <ion-datetime [(ngModel)]="formulariozinho.myDate" (ionChange)="($event)" [value]="defaultDate"></ion-datetime>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20" bg-transparent no-padding mg-top-20 lines="full">
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
           <ion-label position="floating">Cep</ion-label>
           <ion-input [(ngModel)]="formulariozinho.cep" maxlength="10" type="number" required></ion-input>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
           <ion-label position="floating">Numero</ion-label>
           <ion-input [(ngModel)]="formulariozinho.number" maxlength="10" type="number" required></ion-input>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
           <ion-label position="floating">complemento</ion-label>
           <ion-input [(ngModel)]="formulariozinho.complement" type="text"></ion-input>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20" lines="full">
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
           <ion-label position="floating">Celular</ion-label>
           <ion-input maxlength="10" [(ngModel)]="formulariozinho.phone" type="text" required></ion-input>
         </ion-item>
 
-        <ion-item class="bg-transparent no-padding mg-top-20" class="bg-transparent no-padding mg-top-20">
-          <ion-label position="floating">Escolha uma super senha:p</ion-label>
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt">
+          <ion-label position="floating">Escolha uma super senha</ion-label>
           <ion-input [(ngModel)]="formulariozinho.senha" type="password"></ion-input>
         </ion-item>
 
