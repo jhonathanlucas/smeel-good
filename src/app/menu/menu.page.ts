@@ -18,7 +18,7 @@ export class MenuPage implements OnInit {
   ngOnInit() {
   }
 
-  sotario($event){
+  tema($event){
     const theme = {
       true:"dark",
       false:"light"
