@@ -3,16 +3,18 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'splashscreen',
+    loadChildren: () => import('./splashscreen/splashscreen.module').then( m => m.SplashscreenPageModule)
   },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },
-
- 
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
   {
     path: 'step1',
     loadChildren: () => import('./step1/step1.module').then( m => m.Step1PageModule)
@@ -58,9 +60,12 @@ const routes: Routes = [
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'sobrenos',
+    loadChildren: () => import('./sobrenos/sobrenos.module').then( m => m.SobrenosPageModule)
   },
+
+ 
+
 
  
 
