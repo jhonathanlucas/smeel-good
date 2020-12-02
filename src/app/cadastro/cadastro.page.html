@@ -44,17 +44,17 @@
 
         <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
           <ion-label position="floating">Cep</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.cep" maxlength="10" type="number" required></ion-input>
+          <ion-input [(ngModel)]="formulariozinho.cep" maxlength="10" type="text" (ionBlur)="buscarCep()"required></ion-input>
+        </ion-item>
+
+        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
+          <ion-label position="floating">Endereço</ion-label>
+          <ion-input [(ngModel)]="formulariozinho.street" type="text"></ion-input>
         </ion-item>
 
         <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
           <ion-label position="floating">Numero</ion-label>
           <ion-input [(ngModel)]="formulariozinho.number" maxlength="10" type="number" required></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
-          <ion-label position="floating">complemento</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.complement" type="text"></ion-input>
         </ion-item>
 
         <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { Storage } from '@ionic/storage';
+import { HttpClient, HttpHeaders, HttpErrorResponse, HttpClientModule} from '@angular/common/http';
 
 @Component({
   selector: 'app-cadastro',
@@ -15,7 +16,7 @@ export class CadastroPage implements OnInit {
     myDate: '',
     cep: '',
     number: '',
-    complement: '',
+    street: '',
     phone: '',
     senha: '',
     }
@@ -27,7 +28,7 @@ export class CadastroPage implements OnInit {
   // login: boolean;
   
 
-  constructor(public formBuilder: FormBuilder, private storage: Storage) { }
+  constructor(public formBuilder: FormBuilder, private storage: Storage, public http: HttpClient) { }
 
   // exibirResgistrar(){
   //   this.login = false;
@@ -89,5 +90,20 @@ export class CadastroPage implements OnInit {
     } else {
       console.log(this.ionicForm.value)
     }
+  }
+
+  buscarCep(){
+    const cepValue = this.formulariozinho.cep;
+    this.http.get(`https://viacep.com.br/ws/${cepValue}/json/`)
+    .subscribe(dado => {
+      console.log(dado);
+      this.insertAddress(dado);
+    })
+  }
+
+  insertAddress(dadosApi){
+    var end = dadosApi.logradouro;
+    var loc = dadosApi.localidade;
+    this.formulariozinho.street = end + ", " + loc;
   }
 }
