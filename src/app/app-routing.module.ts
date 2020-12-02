@@ -63,8 +63,17 @@ const routes: Routes = [
     path: 'sobrenos',
     loadChildren: () => import('./sobrenos/sobrenos.module').then( m => m.SobrenosPageModule)
   },  {
+<<<<<<< HEAD
     path: 'fale-conosco',
     loadChildren: () => import('./fale-conosco/fale-conosco.module').then( m => m.FaleConoscoPageModule)
+=======
+    path: 'faleconosco',
+    loadChildren: () => import('./faleconosco/faleconosco.module').then( m => m.FaleconoscoPageModule)
+  },
+  {
+    path: 'faleconosco',
+    loadChildren: () => import('./faleconosco/faleconosco.module').then( m => m.FaleconoscoPageModule)
+>>>>>>> 14c75135634969a0f533212e28be19647b3dafd7
   },
 
 
