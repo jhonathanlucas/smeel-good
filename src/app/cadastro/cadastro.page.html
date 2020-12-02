@@ -1,86 +1,86 @@
 <ion-content>
- <!-- Register -->
- <div class="bg-register">
-
-  <!-- overlay -->
-  <div class="overlay">
-
-    <!-- register-Container -->
-    <div>
-
-      <!-- logo -->
-      <div class="center padding-top-10-percent">
-        <img src="/assets/imgs/Smee.png" class="logo-white-login">
-      </div>
-
-      <!-- TEXTOS -->
-      <div class="mg-top-30">
-        <!-- TITULOS -->
-        <h5 class="center bold no-margin mg-top-40 form-txt">
-          eba! Vamos lá.
-        </h5>
-        <!-- SUBTITULO -->
-        <p class="center light no-margin mg-top-10 form-txt">
-          Crie suas credenciais de acesso
-        </p>
-      </div>
-      <!-- Forms e CTA -->
-      <div class="padding-40 form-txt">
-
-        <ion-item class="bg-transparent no-padding mg-top-30 form-txt">
-          <ion-label position="floating">Qual é o seu nome</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.username" type="text"></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt">
-          <ion-label position="floating">Qual é o seu e-mail</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.email" type="email"></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
-          <ion-label position="floating">Data de nascimento</ion-label>
-          <ion-datetime [(ngModel)]="formulariozinho.myDate" (ionChange)="($event)" [value]="defaultDate"></ion-datetime>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
-          <ion-label position="floating">Cep</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.cep" maxlength="10" type="text" (ionBlur)="buscarCep()"required></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
-          <ion-label position="floating">Endereço</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.street" type="text"></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
-          <ion-label position="floating">Numero</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.number" maxlength="10" type="number" required></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
-          <ion-label position="floating">Celular</ion-label>
-          <ion-input maxlength="10" [(ngModel)]="formulariozinho.phone" type="text" required></ion-input>
-        </ion-item>
-
-        <ion-item class="bg-transparent no-padding mg-top-20 form-txt">
-          <ion-label position="floating">Escolha uma super senha</ion-label>
-          <ion-input [(ngModel)]="formulariozinho.senha" type="password"></ion-input>
-        </ion-item>
-
-        <div class="ctaregister bold center mg-top-30" routerLink="/menu" (click)="saveData()">
-          Cadastrar
-        </div>
-
-        <!-- Ja tenho uma conta -->
-        <div class="bold mg-top-20 center" routerLink="/login" >
-          Ja tenho uma conta
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-</ion-content>
+  <!-- Register -->
+  <div class="bg-register">
+ 
+   <!-- overlay -->
+   <div class="overlay">
+ 
+     <!-- register-Container -->
+     <div>
+ 
+       <!-- logo -->
+       <div class="center padding-top-10-percent">
+         <img src="/assets/imgs/Smee.png" class="logo-white-login">
+       </div>
+ 
+       <!-- TEXTOS -->
+       <div class="mg-top-30">
+         <!-- TITULOS -->
+         <h5 class="center bold no-margin mg-top-40 form-txt">
+           eba! Vamos lá.
+         </h5>
+         <!-- SUBTITULO -->
+         <p class="center light no-margin mg-top-10 form-txt">
+           Crie suas credenciais de acesso
+         </p>
+       </div>
+       <!-- Forms e CTA -->
+       <div class="padding-40 form-txt">
+ 
+         <ion-item class="bg-transparent no-padding mg-top-30 form-txt">
+           <ion-label position="floating">Qual é o seu nome</ion-label>
+           <ion-input [(ngModel)]="formulariozinho.username" type="text"></ion-input>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt">
+           <ion-label position="floating">Qual é o seu e-mail</ion-label>
+           <ion-input [(ngModel)]="formulariozinho.email" type="email"></ion-input>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
+           <ion-label position="floating">Data de nascimento</ion-label>
+           <ion-datetime [(ngModel)]="formulariozinho.myDate" (ionChange)="($event)" [value]="defaultDate"></ion-datetime>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt"  lines="full">
+           <ion-label position="floating">Cep</ion-label>
+           <ion-input [(ngModel)]="formulariozinho.cep" maxlength="10" type="text" (ionBlur)="buscarCep()"required></ion-input>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
+           <ion-label position="floating">Endereço</ion-label>
+           <ion-input [(ngModel)]="formulariozinho.street" type="text"></ion-input>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
+           <ion-label position="floating">Numero</ion-label>
+           <ion-input [(ngModel)]="formulariozinho.number" maxlength="10" type="number" required></ion-input>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt" lines="full">
+           <ion-label position="floating">Celular</ion-label>
+           <ion-input maxlength="10" [(ngModel)]="formulariozinho.phone" type="text" required></ion-input>
+         </ion-item>
+ 
+         <ion-item class="bg-transparent no-padding mg-top-20 form-txt">
+           <ion-label position="floating">Escolha uma super senha</ion-label>
+           <ion-input [(ngModel)]="formulariozinho.senha" type="password"></ion-input>
+         </ion-item>
+ 
+         <div class="ctaregister bold center mg-top-30" routerLink="/menu" (click)="saveData()">
+           Cadastrar
+         </div>
+ 
+         <!-- Ja tenho uma conta -->
+         <div class="bold mg-top-20 center" routerLink="/login" >
+           Ja tenho uma conta
+         </div>
+ 
+       </div>
+ 
+     </div>
+ 
+   </div>
+ 
+ </div>
+ </ion-content>
