@@ -1,13 +1,13 @@
-<ion-header >
+<ion-header>
 
   <ion-toolbar>
 
-    <ion-buttons slot="start" >
+    <ion-buttons slot="start">
       <ion-menu-button class="bg-transparent"></ion-menu-button>
     </ion-buttons>
 
     <ion-title slot="end">
-       <img src="/assets/imgs/Smee.png" class="logo-white-login"> 
+      <img src="/assets/imgs/Smee.png" class="logo-white-login">
     </ion-title>
 
   </ion-toolbar>
@@ -16,6 +16,8 @@
 
 <ion-menu side="start" menuId="first" contentId="main">
 
+  
+
   <ion-header>
 
     <ion-toolbar>
@@ -23,23 +25,23 @@
     </ion-toolbar>
 
   </ion-header>
-  
+
   <ion-content>
 
     <ion-list>
 
-        <ion-item routerLink="/menu">Planos</ion-item>
-        <ion-item routerLink="/sobrenos">Sobre nós</ion-item>
-        <ion-item routerLink="/faleconosco">Fale conosco</ion-item>
+      <ion-item routerLink="/menu">Planos</ion-item>
+      <ion-item routerLink="/sobrenos">Sobre nós</ion-item>
+      <ion-item routerLink="/faleconosco">Fale conosco</ion-item>
 
-        <ion-item lines="full">
-          <ion-label>
-             Dark Theme
-          </ion-label>
+      <ion-item lines="full">
+        <ion-label>
+          Dark Theme
+        </ion-label>
 
-          <ion-toggle default (ionChange)="tema($event)" slot="end"></ion-toggle>
+        <ion-toggle default (ionChange)="tema($event)" slot="end"></ion-toggle>
 
-        </ion-item>
+      </ion-item>
 
     </ion-list>
 
@@ -53,22 +55,24 @@
     <div class="fullscreencenter">
       <h2 class="featured-txt">explora ai bro</h2>
     </div>
-    
-  <ion-slides pager class="customslides">
 
-    <ion-slide class="customslide" style="background-color: green;">
-      <ion-button routerLink="/menu" size="large" expand="full" fill="clear"> <h4>Nossos planos</h4></ion-button>
-    </ion-slide>
+    <ion-slides pager class="customslides">
 
-    <ion-slide class="customslide" style="background-color: rgb(221, 175, 22);">
-      <h2>slide1</h2>
-    </ion-slide>
-    
-    <ion-slide class="customslide" style="background-color: red;">
-      <h2>slide1</h2>
-    </ion-slide>
+      <ion-slide class="customslide" style="background-color: green;">
+        <ion-button routerLink="/menu" size="large" expand="full" fill="clear">
+          <h4>Nossos planos</h4>
+        </ion-button>
+      </ion-slide>
 
-  </ion-slides>
+      <ion-slide class="customslide" style="background-color: rgb(221, 175, 22);">
+        <h2>slide1</h2>
+      </ion-slide>
+
+      <ion-slide class="customslide" style="background-color: red;">
+        <h2>slide1</h2>
+      </ion-slide>
+
+    </ion-slides>
   </div>
 
 </ion-content>

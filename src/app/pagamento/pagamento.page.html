@@ -1,37 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="titulo">pagamento</ion-title>
 
-    <ion-buttons slot="end">
+    <ion-buttons slot="start">
       <ion-button routerLink="/home">
-        <h7> < inicio</h7>
+        <h7>
+          < inicio
+        </h7>
       </ion-button>
     </ion-buttons>
-    
+
+    <ion-title slot="end">
+      <img src="/assets/imgs/Smee.png" class="logo-white-login">
+    </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<h1 class="ion-text-center">Escolha a forma de pagamento</h1>
-<h4 class="ion-text-center">(O pagamento só sera realizado no momento da retirada do certo de roupas)</h4>
-  <p>Método Selecionado: {{ paymentMethod }}</p>
-  <ion-radio-group [(ngModel)]="paymentMethod">
-    <ion-item>
-      <ion-label>Dinheiro</ion-label>
-      <ion-radio slot="start" value="dinheiro"></ion-radio>
-    </ion-item>
-    <ion-item>
-      <ion-label>Crédito</ion-label>
-      <ion-radio slot="start" value="credito"></ion-radio>
-    </ion-item>
-    <ion-item>
-      <ion-label>Débito</ion-label>
-      <ion-radio slot="start" value="debito"></ion-radio>
-    </ion-item>
-  </ion-radio-group>
+  <div class="blue-div">
+    <h1 class="b">Escolha a forma de pagamento</h1>
+    <h4 class="b">(O pagamento só sera realizado no momento da retirada do cesto de roupas)</h4>
+    <p class="a" >Método Selecionado: {{ paymentMethod }}</p>
+    <ion-radio-group [(ngModel)]="paymentMethod">
+      <ion-item>
+        <ion-label class="a"> Dinheiro </ion-label>
+        <ion-radio color="dark" slot="start" value="Dinheiro"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label class="a"> Crédito </ion-label>
+        <ion-radio color="dark" slot="start" value="Credito"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label class="a"> Débito </ion-label>
+        <ion-radio color="dark" slot="start" value="Debito"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
 
-  <ion-card class="cliButton">
-    <ion-button routerLink="/finish" (click)="paymentForm()" size="large" expand="full" fill="clear"><h4 class="a">Finalizar</h4></ion-button>
-  </ion-card>
-
+    <ion-card class="cliButton">
+      <ion-button routerLink="/finish" (click)="paymentForm()" size="large" expand="full" fill="clear">
+        <h4 class="a">Finalizar</h4>
+      </ion-button>
+    </ion-card>
+  </div>
 </ion-content>

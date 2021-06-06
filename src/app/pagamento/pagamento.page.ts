@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagamentoPage implements OnInit {
 
-  public paymentMethod = '?';
+  public paymentMethod = ' ';
 
   constructor() { }
 
@@ -15,6 +15,6 @@ export class PagamentoPage implements OnInit {
   }
 
   public paymentForm(){
-    console.log("forma de pagamento: " + this.paymentMethod)
+    console.log("Forma de pagamento: " + this.paymentMethod)
   }
 }
