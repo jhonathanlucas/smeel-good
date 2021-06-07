@@ -1,27 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="titulo">ag-entrega</ion-title>
-    
+
     <ion-buttons slot="start">
       <ion-button routerLink="/home">
-        <h7> < inicio</h7>
+        <h7>
+          < inicio
+        </h7>
       </ion-button>
     </ion-buttons>
+
+    <ion-title slot="end">
+      <img src="/assets/imgs/Smee.png" class="logo-white-login">
+    </ion-title>
+
   </ion-toolbar>
-
-  
-
 </ion-header>
 
 <ion-content>
-  <h1 class="ion-text-center">Uau, parece que ja esta tudo limpo, agora é só agendar o dia da entrega</h1>
+
+  <div class="blue-div">
+  <h1 class="b">Uau, parece que ja esta tudo limpo, agora é só agendar o dia da entrega</h1>
   
-  <ion-item lines="full">
+  <ion-item lines="full" class="psps">
     <ion-label position="floating">Dia da entrega</ion-label>
     <ion-datetime [(ngModel)]="mydate" min="2020" max="2020"></ion-datetime>
   </ion-item>
 
-  <ion-item >
+  <ion-item class="pspss" >
     <ion-label>Hora da entrega</ion-label>
     <ion-datetime [(ngModel)]="mydate" displayFormat="HH:mm"></ion-datetime>
   </ion-item>
@@ -32,4 +37,6 @@
   <ion-button (click)="agendamento()" routerLink="/entrega" size="large" expand="full" fill="clear"><h4 class="a">Agendar</h4></ion-button>
 </ion-card>
 
+
+</div>
 </ion-content>
