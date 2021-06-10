@@ -1,26 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="titulo">Agendamento</ion-title>
+    
+
+    <ion-title slot="end">
+      <img src="/assets/imgs/Smee.png" class="logo-white-login">
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <h7>
+          < inicio
+        </h7>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <div class="blue-div">
+
  
   
-    <ion-item lines="full">
+    <ion-item lines="full" class="psps">
       <ion-label position="floating">Dia da retirada</ion-label>
       <ion-datetime [(ngModel)]="mydate" min="2020" max="2020"></ion-datetime>
     </ion-item>
   
-    <ion-item >
-      <ion-label>Hora da retirada</ion-label>
+    <ion-item class="pspss">
+      <ion-label position="floating" >Hora da retirada</ion-label>
       <ion-datetime [(ngModel)]="mydate" displayFormat="HH:mm"></ion-datetime>
     </ion-item>
   
   
 
   <ion-card class="cliButton">
-    <ion-button (click)="agendamento()" routerLink="/pagamento" size="large" expand="full" fill="clear">Ir para a forma de pagamento</ion-button>
+    <ion-button (click)="agendamento()" routerLink="/pagamento" size="large" expand="full" fill="clear"> <h4 class="a">Ir para a forma de pagamento</h4></ion-button>
   </ion-card>
-  
+   </div>
 </ion-content>
